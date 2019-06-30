@@ -1,0 +1,100 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu May 23 10:41:56 2019
+| Host         : 654F running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file R_TOP_control_sets_placed.rpt
+| Design       : R_TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    34 |
+| Unused register locations in slices containing registers |     9 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      6 |            1 |
+|    16+ |           32 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               6 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1024 |          488 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+----------------------------------+------------------+------------------+----------------+
+|     Clock Signal    |           Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++---------------------+----------------------------------+------------------+------------------+----------------+
+|  cpu/pc/C_reg_i_7_0 |                                  |                  |                1 |              1 |
+| ~clk_IBUF_BUFG      |                                  | rst_IBUF         |                1 |              6 |
+| ~clk_IBUF_BUFG      | cpu/pc/REG_Files[0][31]_i_4_7[0] | rst_IBUF         |               24 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/E[0]                      | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/REG_Files[0][31]_i_4_3[0] | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/REG_Files[0][31]_i_4_4[0] | rst_IBUF         |                9 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/REG_Files[0][31]_i_4_5[0] | rst_IBUF         |               18 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/REG_Files[0][31]_i_4_6[0] | rst_IBUF         |               20 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[15]_3[0]     | rst_IBUF         |               10 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[11]_0[0]     | rst_IBUF         |               22 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_1[0]     | rst_IBUF         |               20 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_4[0]     | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[13][0]       | rst_IBUF         |               11 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[12]_1[0]     | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_2[0]     | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_5[0]     | rst_IBUF         |               17 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[15]_1[0]     | rst_IBUF         |               10 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[13]_1[0]     | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_3[0]     | rst_IBUF         |               21 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_8[0]     | rst_IBUF         |               11 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[12][0]       | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[15]_2[0]     | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_0[0]     | rst_IBUF         |               20 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_7[0]     | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[11][0]       | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[12]_0[0]     | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[12]_3[0]     | rst_IBUF         |               11 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14][0]       | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[12]_2[0]     | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_6[0]     | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[13]_0[0]     | rst_IBUF         |               19 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[14]_9[0]     | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[15][0]       | rst_IBUF         |               18 |             32 |
+| ~clk_IBUF_BUFG      | cpu/pc/bbstub_douta[15]_0[0]     | rst_IBUF         |               19 |             32 |
++---------------------+----------------------------------+------------------+------------------+----------------+
+
+

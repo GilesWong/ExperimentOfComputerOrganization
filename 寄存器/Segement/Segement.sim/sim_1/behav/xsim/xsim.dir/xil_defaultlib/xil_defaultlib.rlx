@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/wangwenge/Documents/Segment1/Segement/Segement.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sim_1/new/siim_1.v,1557398149,verilog,,,,sim_1,,,,,,,,
+C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sources_1/new/ALU.v,1554821790,verilog,,C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sources_1/new/Segment.v,,ALU,,,,,,,,
+C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sources_1/new/Segment.v,1557397677,verilog,,C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sources_1/new/Segment_top.v,,Segment,,,,,,,,
+C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sources_1/new/Segment_top.v,1557397672,verilog,,C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sources_1/new/segControl.v,,Segment_top,,,,,,,,
+C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sources_1/new/segControl.v,1555412636,verilog,,C:/Users/wangwenge/Documents/Segment1/Segement/Segement.srcs/sim_1/new/siim_1.v,,segControl,,,,,,,,

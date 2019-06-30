@@ -1,0 +1,164 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  1 19:09:17 2019
+# Process ID: 4816
+# Current directory: C:/Users/wangwenge/Documents/ALU/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12412 C:\Users\wangwenge\Documents\ALU\ALU\ALU.xpr
+# Log file: C:/Users/wangwenge/Documents/ALU/ALU/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/ALU/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/ALU/ALU/ALU.xpr
+export_ip_user_files -of_objects  [get_files C:/Users/wangwenge/Desktop/Exp3_ALU/CLED_M.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wangwenge/Desktop/Exp3_ALU/CLED_M.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source ALU_TEST.tcl
+close_sim
+launch_simulation
+source ALU_TEST.tcl
+close_sim
+launch_simulation
+source ALU_TEST.tcl
+file mkdir C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v w ]
+add_files -fileset sim_1 C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+place_ports {BUTTON[5]} V8
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]} {BUTTON[4]} {BUTTON[3]} {BUTTON[2]} {BUTTON[1]} {BUTTON[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_IN[31]} {DATA_IN[30]} {DATA_IN[29]} {DATA_IN[28]} {DATA_IN[27]} {DATA_IN[26]} {DATA_IN[25]} {DATA_IN[24]} {DATA_IN[23]} {DATA_IN[22]} {DATA_IN[21]} {DATA_IN[20]} {DATA_IN[19]} {DATA_IN[18]} {DATA_IN[17]} {DATA_IN[16]} {DATA_IN[15]} {DATA_IN[14]} {DATA_IN[13]} {DATA_IN[12]} {DATA_IN[11]} {DATA_IN[10]} {DATA_IN[9]} {DATA_IN[8]} {DATA_IN[7]} {DATA_IN[6]} {DATA_IN[5]} {DATA_IN[4]} {DATA_IN[3]} {DATA_IN[2]} {DATA_IN[1]} {DATA_IN[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_OUT[31]} {DATA_OUT[30]} {DATA_OUT[29]} {DATA_OUT[28]} {DATA_OUT[27]} {DATA_OUT[26]} {DATA_OUT[25]} {DATA_OUT[24]} {DATA_OUT[23]} {DATA_OUT[22]} {DATA_OUT[21]} {DATA_OUT[20]} {DATA_OUT[19]} {DATA_OUT[18]} {DATA_OUT[17]} {DATA_OUT[16]} {DATA_OUT[15]} {DATA_OUT[14]} {DATA_OUT[13]} {DATA_OUT[12]} {DATA_OUT[11]} {DATA_OUT[10]} {DATA_OUT[9]} {DATA_OUT[8]} {DATA_OUT[7]} {DATA_OUT[6]} {DATA_OUT[5]} {DATA_OUT[4]} {DATA_OUT[3]} {DATA_OUT[2]} {DATA_OUT[1]} {DATA_OUT[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]} {BUTTON[4]} {BUTTON[3]} {BUTTON[2]} {BUTTON[1]} {BUTTON[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]}]]
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7a100tfgg484-2L [current_project]
+launch_runs synth_2 -jobs 2
+wait_on_run synth_2
+launch_runs impl_2 -jobs 2
+wait_on_run impl_2
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[4]}]]
+open_run impl_2
+set_property package_pin "" [get_ports [list  {BUTTON[5]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_OUT[31]} {DATA_OUT[30]} {DATA_OUT[29]} {DATA_OUT[28]} {DATA_OUT[27]} {DATA_OUT[26]} {DATA_OUT[25]} {DATA_OUT[24]} {DATA_OUT[23]} {DATA_OUT[22]} {DATA_OUT[21]} {DATA_OUT[20]} {DATA_OUT[19]} {DATA_OUT[18]} {DATA_OUT[17]} {DATA_OUT[16]} {DATA_OUT[15]} {DATA_OUT[14]} {DATA_OUT[13]} {DATA_OUT[12]} {DATA_OUT[11]} {DATA_OUT[10]} {DATA_OUT[9]} {DATA_OUT[8]} {DATA_OUT[7]} {DATA_OUT[6]} {DATA_OUT[5]} {DATA_OUT[4]} {DATA_OUT[3]} {DATA_OUT[2]} {DATA_OUT[1]} {DATA_OUT[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_IN[31]} {DATA_IN[30]} {DATA_IN[29]} {DATA_IN[28]} {DATA_IN[27]} {DATA_IN[26]} {DATA_IN[25]} {DATA_IN[24]} {DATA_IN[23]} {DATA_IN[22]} {DATA_IN[21]} {DATA_IN[20]} {DATA_IN[19]} {DATA_IN[18]} {DATA_IN[17]} {DATA_IN[16]} {DATA_IN[15]} {DATA_IN[14]} {DATA_IN[13]} {DATA_IN[12]} {DATA_IN[11]} {DATA_IN[10]} {DATA_IN[9]} {DATA_IN[8]} {DATA_IN[7]} {DATA_IN[6]} {DATA_IN[5]} {DATA_IN[4]} {DATA_IN[3]} {DATA_IN[2]} {DATA_IN[1]} {DATA_IN[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]} {BUTTON[4]} {BUTTON[3]} {BUTTON[2]} {BUTTON[1]} {BUTTON[0]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {BUTTON[4]}]]
+place_ports {BUTTON[4]} N13
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {DATA_OUT[31]} {DATA_OUT[30]} {DATA_OUT[29]} {DATA_OUT[28]} {DATA_OUT[27]} {DATA_OUT[26]} {DATA_OUT[25]} {DATA_OUT[24]} {DATA_OUT[23]} {DATA_OUT[22]} {DATA_OUT[21]} {DATA_OUT[20]} {DATA_OUT[19]} {DATA_OUT[18]} {DATA_OUT[17]} {DATA_OUT[16]} {DATA_OUT[15]} {DATA_OUT[14]} {DATA_OUT[13]} {DATA_OUT[12]} {DATA_OUT[11]} {DATA_OUT[10]} {DATA_OUT[9]} {DATA_OUT[8]} {DATA_OUT[7]} {DATA_OUT[6]} {DATA_OUT[5]} {DATA_OUT[4]} {DATA_OUT[3]} {DATA_OUT[2]} {DATA_OUT[1]} {DATA_OUT[0]}]]
+place_ports {BUTTON[5]} AA8
+endgroup
+place_ports {BUTTON[5]} V8
+place_ports {BUTTON[4]} AA8
+place_ports {BUTTON[3]} AB6
+place_ports {BUTTON[2]} T5
+place_ports {BUTTON[1]} R4
+place_ports {BUTTON[0]} AA4
+current_design impl_1
+current_design impl_2
+current_design impl_1
+close_design
+set_property PULLTYPE PULLDOWN [get_ports [list {DATA_IN[31]} {DATA_IN[30]} {DATA_IN[29]} {DATA_IN[28]} {DATA_IN[27]} {DATA_IN[26]} {DATA_IN[25]} {DATA_IN[24]} {DATA_IN[23]} {DATA_IN[22]} {DATA_IN[21]} {DATA_IN[20]} {DATA_IN[19]} {DATA_IN[18]} {DATA_IN[17]} {DATA_IN[16]} {DATA_IN[15]} {DATA_IN[14]} {DATA_IN[13]} {DATA_IN[12]} {DATA_IN[11]} {DATA_IN[10]} {DATA_IN[9]} {DATA_IN[8]} {DATA_IN[7]} {DATA_IN[6]} {DATA_IN[5]} {DATA_IN[4]} {DATA_IN[3]} {DATA_IN[2]} {DATA_IN[1]} {DATA_IN[0]}]]
+place_ports {DATA_IN[31]} T3
+place_ports {DATA_IN[30]} U3
+place_ports {DATA_IN[29]} T4
+place_ports {DATA_IN[28]} V3
+place_ports {DATA_IN[27]} V4
+place_ports {DATA_IN[26]} W4
+place_ports {DATA_IN[25]} Y4
+place_ports {DATA_IN[24]} Y6
+place_ports {DATA_IN[23]} W7
+place_ports {DATA_IN[22]} Y8
+place_ports {DATA_IN[21]} Y7
+place_ports {DATA_IN[20]} T1
+place_ports {DATA_IN[19]} U1
+place_ports {DATA_IN[18]} U2
+place_ports {DATA_IN[17]} W1
+place_ports {DATA_IN[16]} W2
+place_ports {DATA_IN[15]} Y1
+place_ports {DATA_IN[14]} AA1
+place_ports {DATA_IN[13]} V2
+place_ports {DATA_IN[12]} Y2
+place_ports {DATA_IN[11]} AB1
+place_ports {DATA_IN[10]} AB2
+place_ports {DATA_IN[9]} AB3
+place_ports {DATA_IN[8]} AB5
+place_ports {DATA_IN[7]} AA6
+place_ports {DATA_IN[6]} R2
+place_ports {DATA_IN[5]} R3
+place_ports {DATA_IN[4]} T6
+place_ports {DATA_IN[3]} R6
+place_ports {DATA_IN[2]} U7
+place_ports {DATA_IN[1]} AB7
+place_ports {DATA_IN[0]} AB8
+place_ports {DATA_OUT[31]} R1
+place_ports {DATA_OUT[30]} P2
+place_ports {DATA_OUT[29]} P1
+place_ports {DATA_OUT[28]} N2
+place_ports {DATA_OUT[27]} M1
+place_ports {DATA_OUT[26]} M2
+place_ports {DATA_OUT[25]} L1
+place_ports {DATA_OUT[24]} J2
+place_ports {DATA_OUT[23]} G1
+place_ports {DATA_OUT[22]} E1
+place_ports {DATA_OUT[21]} D2
+place_ports {DATA_OUT[20]} A1
+place_ports {DATA_OUT[19]} L3
+place_ports {DATA_OUT[18]} G3
+place_ports {DATA_OUT[17]} K4
+place_ports {DATA_OUT[16]} G4
+place_ports {DATA_OUT[15]} K1
+place_ports {DATA_OUT[14]} J1
+place_ports {DATA_OUT[13]} H2
+place_ports {DATA_OUT[12]} G2
+place_ports {DATA_OUT[11]} F1
+place_ports {DATA_OUT[10]} E2
+place_ports {DATA_OUT[9]} D1
+place_ports {DATA_OUT[8]} B1
+place_ports {DATA_OUT[7]} B2
+place_ports {DATA_OUT[6]} N3
+place_ports {DATA_OUT[5]} M3
+place_ports {DATA_OUT[4]} K3
+place_ports {DATA_OUT[3]} H3
+place_ports {DATA_OUT[2]} N4
+place_ports {DATA_OUT[1]} L4
+place_ports {DATA_OUT[0]} J4
+file mkdir C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new
+close [ open C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new/constraints.xdc
+set_property target_constrs_file C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new/constraints.xdc [current_fileset -constrset]
+save_constraints -force
+startgroup
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs impl_2]
+endgroup
+save_constraints -force
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_2]
+set_property constrset constrs_2 [get_runs impl_2]
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+wait_on_run synth_2
+launch_runs impl_2 -jobs 2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+wait_on_run impl_2
+close_sim

@@ -1,0 +1,337 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 16 11:29:21 2019
+# Process ID: 8128
+# Current directory: C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.runs/synth_1
+# Command line: vivado.exe -log Fetch_Instr_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fetch_Instr_Top.tcl
+# Log file: C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.runs/synth_1/Fetch_Instr_Top.vds
+# Journal file: C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Fetch_Instr_Top.tcl -notrace
+Command: synth_design -top Fetch_Instr_Top -part xc7a100tfgg484-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8700 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 369.164 ; gain = 101.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Instr_Top' [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/Fetch_Instr_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.runs/synth_1/.Xil/Vivado-8128-654F/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.runs/synth_1/.Xil/Vivado-8128-654F/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Inst_addr' of module 'blk_mem_gen_0' requires 5 connections, but only 3 given [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/Fetch_Instr_Top.v:38]
+INFO: [Synth 8-6157] synthesizing module 'segControl' [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/segControl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'segControl' (2#1) [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/segControl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Instr_Top' (3#1) [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/Fetch_Instr_Top.v:23]
+WARNING: [Synth 8-3917] design Fetch_Instr_Top has port enable driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 424.758 ; gain = 157.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 424.758 ; gain = 157.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 424.758 ; gain = 157.121
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Inst_addr'
+Finished Parsing XDC File [c:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Inst_addr'
+Parsing XDC File [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Fetch_Instr_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Fetch_Instr_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 752.680 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 752.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 752.680 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 752.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 752.680 ; gain = 485.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 752.680 ; gain = 485.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Inst_addr. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 752.680 ; gain = 485.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 752.680 ; gain = 485.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Fetch_Instr_Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module segControl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Fetch_Instr_Top has port enable driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PC_new_inferred/\PC_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PC_new_inferred/\PC_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 752.680 ; gain = 485.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 759.656 ; gain = 492.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 759.805 ; gain = 492.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Inst_addr has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |BUFG          |     2|
+|3     |LUT1          |     2|
+|4     |LUT2          |     5|
+|5     |LUT3          |     4|
+|6     |LUT4          |     4|
+|7     |LUT5          |     5|
+|8     |LUT6          |    12|
+|9     |FDRE          |    20|
+|10    |IBUF          |     3|
+|11    |OBUF          |    44|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   133|
+|2     |  sc     |segControl |    40|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 33 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 769.988 ; gain = 174.430
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 769.988 ; gain = 502.352
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 779.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 3 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 779.816 ; gain = 523.648
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 779.816 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.runs/synth_1/Fetch_Instr_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Fetch_Instr_Top_utilization_synth.rpt -pb Fetch_Instr_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 16 11:29:52 2019...

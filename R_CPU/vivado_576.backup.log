@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 29 18:35:44 2019
+# Process ID: 576
+# Current directory: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11000 C:\Users\wangwenge\Documents\MemoryIP\R_I_J_CPU\R_I_J_CPU.xpr
+# Log file: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* Current project part 'xc7a100tfgg484-2L' and the part 'xa7a100tfgg484-2I' used to customize the IP 'blk_mem_gen_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 621.188 ; gain = 62.414
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-2L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'cpu/pc/Inst_addr'
+INFO: [Netlist 29-17] Analyzing 283 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'R_TOP' is not ideal for floorplanning, since the cellview 'REGS' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/constrs_1/new/constr.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1191.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1191.723 ; gain = 0.000
+create_project R_I_CPU C:/Users/wangwenge/Documents/R_I_CPU -part xc7a100tfgg484-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1717.492 ; gain = 53.102
+file mkdir C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v
+update_compile_order -fileset sources_1
+current_project R_I_J_CPU
+current_project R_I_CPU
+current_project R_I_J_CPU
+current_project R_I_CPU
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+current_project R_I_J_CPU
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/code.coe' provided. It will be converted relative to IP Instance files '../../../../../../R_I_CPU/R_I_CPU.srcs/sources_1/code.coe'
+current_project R_I_CPU
+current_project R_I_J_CPU
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/code.coe' provided. It will be converted relative to IP Instance files '../../../../../../R_I_CPU/R_I_CPU.srcs/sources_1/code.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/code.coe' provided. It will be converted relative to IP Instance files '../../../../../../R_I_CPU/R_I_CPU.srcs/sources_1/code.coe'

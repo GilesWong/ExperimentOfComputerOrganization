@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v,1554374525,verilog,,C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v,,ALU_M,,,,,,,,
+C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v,1554619381,verilog,,C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v,,ALU_TEST,,,,,,,,
+C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v,1555562947,verilog,,C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v,,ALU,,,,,,,,
+C:/Users/wangwenge/Desktop/Exp3_ALU/CLED_M.v,1528436250,verilog,,C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v,,CLED_M,,,,,,,,
+C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v,1528436250,verilog,,C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v,,Choice_M,,,,,,,,
+C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v,1554121742,verilog,,,,constraints,,,,,,,,

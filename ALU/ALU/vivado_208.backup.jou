@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr  6 14:42:13 2019
+# Process ID: 208
+# Current directory: C:/Users/wangwenge/Documents/ALU/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3536 C:\Users\wangwenge\Documents\ALU\ALU\ALU.xpr
+# Log file: C:/Users/wangwenge/Documents/ALU/ALU/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/ALU/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/ALU/ALU/ALU.xpr
+launch_simulation
+source ALU_TEST.tcl
+close_sim

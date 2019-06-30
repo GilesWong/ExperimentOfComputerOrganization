@@ -1,0 +1,116 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jun  4 22:25:56 2019
+| Host         : 654F running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file R_I_J_TOP_control_sets_placed.rpt
+| Design       : R_I_J_TOP
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    47 |
+| Unused register locations in slices containing registers |    75 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      2 |            3 |
+|      3 |            2 |
+|      5 |            1 |
+|     11 |            2 |
+|    16+ |           35 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              84 |           33 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              33 |           11 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1024 |          495 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+------------------------------------+------------------+------------------+----------------+
+|          Clock Signal          |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------+------------------------------------+------------------+------------------+----------------+
+|  cpu/pc/ALU_OP_reg[2]_i_6_0    |                                    |                  |                1 |              1 |
+|  cpu/pc/bbstub_douta[26]_3     |                                    | cpu/pc/D[0]      |                1 |              1 |
+|  cpu/pc/bbstub_douta[29]       |                                    |                  |                1 |              1 |
+|  cpu/dec/ALU_OP_reg[1]_0       |                                    |                  |                1 |              1 |
+|  cpu/pc/ALU_OP_reg[2]_i_6_1[0] |                                    |                  |                1 |              2 |
+|  cpu/pc/bbstub_douta[29]_1[0]  |                                    |                  |                1 |              2 |
+|  cpu/pc/bbstub_douta[27]_0[0]  |                                    |                  |                1 |              2 |
+|  cpu/pc/ALU_OP_reg[2]_i_6_2[0] |                                    |                  |                1 |              3 |
+| ~tube_clock_IBUF_BUFG          |                                    |                  |                1 |              3 |
+|  cpu/pc/bbstub_douta[26][0]    |                                    |                  |                2 |              5 |
+|  cpu/pc/E[0]                   |                                    |                  |                5 |             11 |
+|  tube_clock_IBUF_BUFG          |                                    |                  |                3 |             11 |
+|  cpu/pc/bbstub_douta[29]_0[0]  |                                    |                  |                5 |             16 |
+|  cpu/pc/bbstub_douta[27]       |                                    |                  |               10 |             26 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_6_1[0]  | rst_IBUF         |               21 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_8_1[0]  | rst_IBUF         |               17 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[4][31]_i_2_0[0]  | rst_IBUF         |               17 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_8_4[0]  | rst_IBUF         |               18 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/Write_Reg_reg_1[0]         | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[4][31]_i_2_1[0]  | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_8_0[0]  | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_6_3[0]  | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_8_5[0]  | rst_IBUF         |                6 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_8_2[0]  | rst_IBUF         |               21 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[29][31]_i_2_0[0] | rst_IBUF         |               19 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[3][31]_i_2_0[0]  | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[2][31]_i_2_0[0]  | rst_IBUF         |               11 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_6_2[0]  | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_6_0[0]  | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_8_3[0]  | rst_IBUF         |               19 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[28][31]_i_3_0[0] | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_4_0[0]  | rst_IBUF         |               24 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/Write_Reg_reg_2[0]         | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/Write_Reg_reg_3[0]         | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_5_0[0]  | rst_IBUF         |               19 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/REG_Files[0][31]_i_7_0[0]  | rst_IBUF         |               10 |             32 |
+| ~clk_IBUF_BUFG                 |                                    | rst_IBUF         |               10 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[0]_0[0]             | rst_IBUF         |               18 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[3]_1[0]             | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[4]_0[0]             | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[4]_2[0]             | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[4]_5[0]             | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[4]_3[0]             | rst_IBUF         |               22 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[4]_4[0]             | rst_IBUF         |               17 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[4]_1[0]             | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/Write_Reg_reg_0[0]         | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG                 | cpu/dec/rt_reg[3]_0[0]             | rst_IBUF         |               10 |             32 |
++--------------------------------+------------------------------------+------------------+------------------+----------------+
+
+

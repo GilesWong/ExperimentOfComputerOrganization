@@ -1,0 +1,170 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 23 22:08:21 2019
+# Process ID: 616
+# Current directory: C:/Users/wangwenge/Documents/ALU/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1528 C:\Users\wangwenge\Documents\ALU\ALU\ALU.xpr
+# Log file: C:/Users/wangwenge/Documents/ALU/ALU/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/ALU/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/ALU/ALU/ALU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 633.766 ; gain = 61.410
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_TEST_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_TEST
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module constraints
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2c575cbdbe0942759351cc7b222fb96d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_TEST_behav xil_defaultlib.ALU_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_M
+Compiling module xil_defaultlib.ALU_TEST
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_TEST_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/ALU_TEST_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 23 22:11:52 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_TEST_behav -key {Behavioral:sim_1:Functional:ALU_TEST} -tclbatch {ALU_TEST.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source ALU_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 747.809 ; gain = 20.492
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_2
+
+launch_runs impl_2 -jobs 2
+[Tue Apr 23 22:16:48 2019] Launched synth_2...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_2/runme.log
+[Tue Apr 23 22:16:48 2019] Launched impl_2...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1628.211 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1628.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1628.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1739.313 ; gain = 976.926
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-2L
+Top: ALU_M
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1853.934 ; gain = 54.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ALU_M' [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v:6]
+WARNING: [Synth 8-6090] variable 'F' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v:28]
+WARNING: [Synth 8-6090] variable 'F' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (1#1) [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_M' (2#1) [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1893.508 ; gain = 93.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1893.508 ; gain = 93.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1893.508 ; gain = 93.613
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_2/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_2/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2019.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2023.621 ; gain = 223.727
+7 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2023.621 ; gain = 223.727
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2089.750 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 27 10:58:45 2019...

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 23 11:29:30 2019
+# Process ID: 1536
+# Current directory: C:/Users/wangwenge/Documents/Fetch_Instr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1316 C:\Users\wangwenge\Documents\Fetch_Instr\Fetch_Instr.xpr
+# Log file: C:/Users/wangwenge/Documents/Fetch_Instr/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/Fetch_Instr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.xpr
+update_compile_order -fileset sources_1
+open_run impl_1

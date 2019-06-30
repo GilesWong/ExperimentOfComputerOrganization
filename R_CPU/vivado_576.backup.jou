@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 29 18:35:44 2019
+# Process ID: 576
+# Current directory: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11000 C:\Users\wangwenge\Documents\MemoryIP\R_I_J_CPU\R_I_J_CPU.xpr
+# Log file: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+create_project R_I_CPU C:/Users/wangwenge/Documents/R_I_CPU -part xc7a100tfgg484-2L
+file mkdir C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v
+close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v w ]
+add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v
+update_compile_order -fileset sources_1
+current_project R_I_J_CPU
+current_project R_I_CPU
+current_project R_I_J_CPU
+current_project R_I_CPU
+current_project R_I_J_CPU
+current_project R_I_CPU
+current_project R_I_J_CPU

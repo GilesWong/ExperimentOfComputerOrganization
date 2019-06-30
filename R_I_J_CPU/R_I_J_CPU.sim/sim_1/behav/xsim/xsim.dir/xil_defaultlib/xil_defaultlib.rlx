@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sim_1/new/sim.v,1559227570,verilog,,,,sim,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1559215869,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v,,blk_mem_gen_0,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1559215559,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v,1559129733,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v,,ALU,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v,1559905814,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/DisplayTube.v,,Decoder,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/DisplayTube.v,1559657430,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/PC.v,,DisplayTube,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/PC.v,1559226904,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/REGS.v,,Fetch_Instr,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/REGS.v,1559129780,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v,,REGS,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v,1559226926,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_TOP.v,,R_I_J_CPU,,,,,,,,
+C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_TOP.v,1559657548,verilog,,C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sim_1/new/sim.v,,R_I_J_TOP,,,,,,,,

@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  1 19:09:17 2019
+# Process ID: 4816
+# Current directory: C:/Users/wangwenge/Documents/ALU/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12412 C:\Users\wangwenge\Documents\ALU\ALU\ALU.xpr
+# Log file: C:/Users/wangwenge/Documents/ALU/ALU/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/ALU/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/ALU/ALU/ALU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+export_ip_user_files -of_objects  [get_files C:/Users/wangwenge/Desktop/Exp3_ALU/CLED_M.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wangwenge/Desktop/Exp3_ALU/CLED_M.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Apr  1 19:45:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Apr  1 19:54:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Apr  1 20:06:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_TEST_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_TEST
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2c575cbdbe0942759351cc7b222fb96d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_TEST_behav xil_defaultlib.ALU_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_M
+Compiling module xil_defaultlib.ALU_TEST
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_TEST_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/ALU_TEST_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  1 20:08:35 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 779.543 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_TEST_behav -key {Behavioral:sim_1:Functional:ALU_TEST} -tclbatch {ALU_TEST.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source ALU_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 804.668 ; gain = 25.125
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_TEST_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_TEST
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2c575cbdbe0942759351cc7b222fb96d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_TEST_behav xil_defaultlib.ALU_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_M
+Compiling module xil_defaultlib.ALU_TEST
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_TEST_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_TEST_behav -key {Behavioral:sim_1:Functional:ALU_TEST} -tclbatch {ALU_TEST.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source ALU_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 810.953 ; gain = 4.059
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_TEST_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_TEST
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2c575cbdbe0942759351cc7b222fb96d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_TEST_behav xil_defaultlib.ALU_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_M
+Compiling module xil_defaultlib.ALU_TEST
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_TEST_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wangwenge/Documents/ALU/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_TEST_behav -key {Behavioral:sim_1:Functional:ALU_TEST} -tclbatch {ALU_TEST.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source ALU_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 810.953 ; gain = 0.000
+file mkdir C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v w ]
+add_files -fileset sim_1 C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_1
+
+launch_runs impl_1 -jobs 2
+[Mon Apr  1 20:29:12 2019] Launched synth_1...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_1/runme.log
+[Mon Apr  1 20:29:12 2019] Launched impl_1...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1043.930 ; gain = 0.340
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1043.930 ; gain = 0.340
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1043.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1158.379 ; gain = 347.426
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports {BUTTON[5]} V8
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]} {BUTTON[4]} {BUTTON[3]} {BUTTON[2]} {BUTTON[1]} {BUTTON[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_IN[31]} {DATA_IN[30]} {DATA_IN[29]} {DATA_IN[28]} {DATA_IN[27]} {DATA_IN[26]} {DATA_IN[25]} {DATA_IN[24]} {DATA_IN[23]} {DATA_IN[22]} {DATA_IN[21]} {DATA_IN[20]} {DATA_IN[19]} {DATA_IN[18]} {DATA_IN[17]} {DATA_IN[16]} {DATA_IN[15]} {DATA_IN[14]} {DATA_IN[13]} {DATA_IN[12]} {DATA_IN[11]} {DATA_IN[10]} {DATA_IN[9]} {DATA_IN[8]} {DATA_IN[7]} {DATA_IN[6]} {DATA_IN[5]} {DATA_IN[4]} {DATA_IN[3]} {DATA_IN[2]} {DATA_IN[1]} {DATA_IN[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_OUT[31]} {DATA_OUT[30]} {DATA_OUT[29]} {DATA_OUT[28]} {DATA_OUT[27]} {DATA_OUT[26]} {DATA_OUT[25]} {DATA_OUT[24]} {DATA_OUT[23]} {DATA_OUT[22]} {DATA_OUT[21]} {DATA_OUT[20]} {DATA_OUT[19]} {DATA_OUT[18]} {DATA_OUT[17]} {DATA_OUT[16]} {DATA_OUT[15]} {DATA_OUT[14]} {DATA_OUT[13]} {DATA_OUT[12]} {DATA_OUT[11]} {DATA_OUT[10]} {DATA_OUT[9]} {DATA_OUT[8]} {DATA_OUT[7]} {DATA_OUT[6]} {DATA_OUT[5]} {DATA_OUT[4]} {DATA_OUT[3]} {DATA_OUT[2]} {DATA_OUT[1]} {DATA_OUT[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]} {BUTTON[4]} {BUTTON[3]} {BUTTON[2]} {BUTTON[1]} {BUTTON[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]}]]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/CLED_M.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/CLED_M.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/Choice_M.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v:]
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a12ticsg325-1L
+current_run [get_runs synth_2]
+set_property part xc7a100tfgg484-2L [current_project]
+launch_runs synth_2 -jobs 2
+[Mon Apr  1 20:46:00 2019] Launched synth_2...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 2
+[Mon Apr  1 20:46:37 2019] Launched impl_2...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/impl_2/runme.log
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[4]}]]
+open_run impl_2
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1871.270 ; gain = 0.398
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1871.270 ; gain = 0.398
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1871.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2063.453 ; gain = 427.461
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property package_pin "" [get_ports [list  {BUTTON[5]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_OUT[31]} {DATA_OUT[30]} {DATA_OUT[29]} {DATA_OUT[28]} {DATA_OUT[27]} {DATA_OUT[26]} {DATA_OUT[25]} {DATA_OUT[24]} {DATA_OUT[23]} {DATA_OUT[22]} {DATA_OUT[21]} {DATA_OUT[20]} {DATA_OUT[19]} {DATA_OUT[18]} {DATA_OUT[17]} {DATA_OUT[16]} {DATA_OUT[15]} {DATA_OUT[14]} {DATA_OUT[13]} {DATA_OUT[12]} {DATA_OUT[11]} {DATA_OUT[10]} {DATA_OUT[9]} {DATA_OUT[8]} {DATA_OUT[7]} {DATA_OUT[6]} {DATA_OUT[5]} {DATA_OUT[4]} {DATA_OUT[3]} {DATA_OUT[2]} {DATA_OUT[1]} {DATA_OUT[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {DATA_IN[31]} {DATA_IN[30]} {DATA_IN[29]} {DATA_IN[28]} {DATA_IN[27]} {DATA_IN[26]} {DATA_IN[25]} {DATA_IN[24]} {DATA_IN[23]} {DATA_IN[22]} {DATA_IN[21]} {DATA_IN[20]} {DATA_IN[19]} {DATA_IN[18]} {DATA_IN[17]} {DATA_IN[16]} {DATA_IN[15]} {DATA_IN[14]} {DATA_IN[13]} {DATA_IN[12]} {DATA_IN[11]} {DATA_IN[10]} {DATA_IN[9]} {DATA_IN[8]} {DATA_IN[7]} {DATA_IN[6]} {DATA_IN[5]} {DATA_IN[4]} {DATA_IN[3]} {DATA_IN[2]} {DATA_IN[1]} {DATA_IN[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {BUTTON[5]} {BUTTON[4]} {BUTTON[3]} {BUTTON[2]} {BUTTON[1]} {BUTTON[0]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {BUTTON[4]}]]
+place_ports {BUTTON[4]} N13
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {DATA_OUT[31]} {DATA_OUT[30]} {DATA_OUT[29]} {DATA_OUT[28]} {DATA_OUT[27]} {DATA_OUT[26]} {DATA_OUT[25]} {DATA_OUT[24]} {DATA_OUT[23]} {DATA_OUT[22]} {DATA_OUT[21]} {DATA_OUT[20]} {DATA_OUT[19]} {DATA_OUT[18]} {DATA_OUT[17]} {DATA_OUT[16]} {DATA_OUT[15]} {DATA_OUT[14]} {DATA_OUT[13]} {DATA_OUT[12]} {DATA_OUT[11]} {DATA_OUT[10]} {DATA_OUT[9]} {DATA_OUT[8]} {DATA_OUT[7]} {DATA_OUT[6]} {DATA_OUT[5]} {DATA_OUT[4]} {DATA_OUT[3]} {DATA_OUT[2]} {DATA_OUT[1]} {DATA_OUT[0]}]]
+place_ports {BUTTON[5]} AA8
+endgroup
+place_ports {BUTTON[5]} V8
+place_ports {BUTTON[4]} AA8
+place_ports {BUTTON[3]} AB6
+place_ports {BUTTON[2]} T5
+place_ports {BUTTON[1]} R4
+place_ports {BUTTON[0]} AA4
+current_design impl_1
+current_design impl_2
+current_design impl_1
+close_design
+set_property PULLTYPE PULLDOWN [get_ports [list {DATA_IN[31]} {DATA_IN[30]} {DATA_IN[29]} {DATA_IN[28]} {DATA_IN[27]} {DATA_IN[26]} {DATA_IN[25]} {DATA_IN[24]} {DATA_IN[23]} {DATA_IN[22]} {DATA_IN[21]} {DATA_IN[20]} {DATA_IN[19]} {DATA_IN[18]} {DATA_IN[17]} {DATA_IN[16]} {DATA_IN[15]} {DATA_IN[14]} {DATA_IN[13]} {DATA_IN[12]} {DATA_IN[11]} {DATA_IN[10]} {DATA_IN[9]} {DATA_IN[8]} {DATA_IN[7]} {DATA_IN[6]} {DATA_IN[5]} {DATA_IN[4]} {DATA_IN[3]} {DATA_IN[2]} {DATA_IN[1]} {DATA_IN[0]}]]
+place_ports {DATA_IN[31]} T3
+place_ports {DATA_IN[30]} U3
+place_ports {DATA_IN[29]} T4
+place_ports {DATA_IN[28]} V3
+place_ports {DATA_IN[27]} V4
+place_ports {DATA_IN[26]} W4
+place_ports {DATA_IN[25]} Y4
+place_ports {DATA_IN[24]} Y6
+place_ports {DATA_IN[23]} W7
+place_ports {DATA_IN[22]} Y8
+place_ports {DATA_IN[21]} Y7
+place_ports {DATA_IN[20]} T1
+place_ports {DATA_IN[19]} U1
+place_ports {DATA_IN[18]} U2
+place_ports {DATA_IN[17]} W1
+place_ports {DATA_IN[16]} W2
+place_ports {DATA_IN[15]} Y1
+place_ports {DATA_IN[14]} AA1
+place_ports {DATA_IN[13]} V2
+place_ports {DATA_IN[12]} Y2
+place_ports {DATA_IN[11]} AB1
+place_ports {DATA_IN[10]} AB2
+place_ports {DATA_IN[9]} AB3
+place_ports {DATA_IN[8]} AB5
+place_ports {DATA_IN[7]} AA6
+place_ports {DATA_IN[6]} R2
+place_ports {DATA_IN[5]} R3
+place_ports {DATA_IN[4]} T6
+place_ports {DATA_IN[3]} R6
+place_ports {DATA_IN[2]} U7
+place_ports {DATA_IN[1]} AB7
+place_ports {DATA_IN[0]} AB8
+place_ports {DATA_OUT[31]} R1
+place_ports {DATA_OUT[30]} P2
+place_ports {DATA_OUT[29]} P1
+place_ports {DATA_OUT[28]} N2
+place_ports {DATA_OUT[27]} M1
+place_ports {DATA_OUT[26]} M2
+place_ports {DATA_OUT[25]} L1
+place_ports {DATA_OUT[24]} J2
+place_ports {DATA_OUT[23]} G1
+place_ports {DATA_OUT[22]} E1
+place_ports {DATA_OUT[21]} D2
+place_ports {DATA_OUT[20]} A1
+place_ports {DATA_OUT[19]} L3
+place_ports {DATA_OUT[18]} G3
+place_ports {DATA_OUT[17]} K4
+place_ports {DATA_OUT[16]} G4
+place_ports {DATA_OUT[15]} K1
+place_ports {DATA_OUT[14]} J1
+place_ports {DATA_OUT[13]} H2
+place_ports {DATA_OUT[12]} G2
+place_ports {DATA_OUT[11]} F1
+place_ports {DATA_OUT[10]} E2
+place_ports {DATA_OUT[9]} D1
+place_ports {DATA_OUT[8]} B1
+place_ports {DATA_OUT[7]} B2
+place_ports {DATA_OUT[6]} N3
+place_ports {DATA_OUT[5]} M3
+place_ports {DATA_OUT[4]} K3
+place_ports {DATA_OUT[3]} H3
+place_ports {DATA_OUT[2]} N4
+place_ports {DATA_OUT[1]} L4
+place_ports {DATA_OUT[0]} J4
+file mkdir C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new
+close [ open C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new/constraints.xdc
+set_property target_constrs_file C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/constrs_1/new/constraints.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3246.957 ; gain = 0.000
+startgroup
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs impl_2]
+endgroup
+save_constraints -force
+ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
+save_constraints_as constrs_2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3246.957 ; gain = 0.000
+set_property constrset constrs_2 [get_runs synth_2]
+set_property constrset constrs_2 [get_runs impl_2]
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+[Mon Apr  1 21:01:19 2019] Launched synth_2...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 2
+[Mon Apr  1 22:38:29 2019] Launched impl_2...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Mon Apr  1 22:40:14 2019] Launched impl_2...
+Run output will be captured here: C:/Users/wangwenge/Documents/ALU/ALU/ALU.runs/impl_2/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 22:43:04 2019...

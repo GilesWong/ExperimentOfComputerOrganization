@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog blk_mem_gen_v8_4_2  \
+"../../../../R_I_J_CPU.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib  \
+"../../../../R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../R_I_J_CPU.srcs/sources_1/new/ALU.v" \
+"../../../../R_I_J_CPU.srcs/sources_1/new/Fetch_Instr.v" \
+"../../../../R_I_J_CPU.srcs/sources_1/new/REGFILE.v" \
+"../../../../R_I_J_CPU.srcs/sources_1/new/R_CPU.v" \
+"../../../../R_I_J_CPU.srcs/sim_1/new/sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,498 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 576
+License: Customer
+
+Current time: 	Wed May 29 18:36:27 IRKT 2019
+Time zone: 	Irkutsk Standard Time (Asia/Irkutsk)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1728x923
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 148 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	wangwenge
+User home directory: C:/Users/wangwenge
+User working directory: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/wangwenge/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/wangwenge/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/wangwenge/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/vivado.log
+Vivado journal file location: 	C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/vivado.jou
+Engine tmp dir: 	C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/.Xil/Vivado-576-654F
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 495 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\wangwenge\Documents\MemoryIP\R_I_J_CPU\R_I_J_CPU.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: open_project C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 506 MB. GUI used memory: 43 MB. Current time: 5/29/19, 6:36:29 PM IRKT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+98111kb) [00:00:16]
+// [Engine Memory]: 545 MB (+419785kb) [00:00:16]
+// [GUI Memory]: 102 MB (+1435kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  4427 ms.
+// Tcl Message: open_project C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 575 MB (+2589kb) [00:00:20]
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 621.188 ; gain = 62.414 
+// Project name: R_I_J_CPU; location: C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU; part: xc7a100tfgg484-2L
+// [Engine Memory]: 685 MB (+85744kb) [00:00:23]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 720 MB. GUI used memory: 48 MB. Current time: 5/29/19, 6:36:44 PM IRKT
+// [Engine Memory]: 720 MB (+609kb) [00:00:38]
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v)]", 1); // B (D, cp)
+// PAPropertyPanels.initPanels (R_CPU.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_CPU.v":23'
+// [GUI Memory]: 107 MB (+85kb) [00:13:05]
+// Elapsed time: 1780 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), alu : ALU (ALU.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), alu : ALU (ALU.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v":6'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), regs : REGS (REGFILE.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), regs : REGS (REGFILE.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/REGFILE.v":23'
+// HMemoryUtils.trashcanNow. Engine heap size: 720 MB. GUI used memory: 50 MB. Current time: 5/29/19, 7:06:44 PM IRKT
+// Elapsed time: 104 seconds
+selectTab((HResource) null, (HResource) null, "Source File Properties", 0); // aI (aF, cp)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 26, false); // u (Q, cp)
+// bt (cp): Synthesis is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a (bt)
+// bx (cp):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // bt (cp)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tfgg484-2L 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 763 MB. GUI used memory: 50 MB. Current time: 5/29/19, 7:08:52 PM IRKT
+// [Engine Memory]: 763 MB (+7093kb) [00:32:38]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.7s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.4s
+// [Engine Memory]: 912 MB (+116773kb) [00:32:40]
+// [GUI Memory]: 124 MB (+12002kb) [00:32:41]
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 133 MB (+3063kb) [00:32:42]
+// WARNING: HEventQueue.dispatchEvent() is taking  3440 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'cpu/pc/Inst_addr' INFO: [Netlist 29-17] Analyzing 283 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a100tfgg484-2L INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/constrs_1/new/constr.xdc] Finished Parsing XDC File [C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/constrs_1/new/constr.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1191.723 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// [Engine Memory]: 962 MB (+4076kb) [00:32:43]
+// Tcl Message: open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1191.723 ; gain = 0.000 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 15 seconds
+dismissDialog("Open Synthesized Design"); // bx (cp)
+// RouteApi::initDelayMediator elapsed time: 10.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 80 MB. Current time: 5/29/19, 7:09:09 PM IRKT
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.SchematicView_ADD, "Schematic_addToSchematic"); // B (f, cp)
+// PAPropertyPanels.initPanels (LED_OBUF[12]) elapsed time: 0.6s
+// [Engine Memory]: 1,393 MB (+402056kb) [00:32:59]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,449 MB. GUI used memory: 81 MB. Current time: 5/29/19, 7:09:29 PM IRKT
+// PAPropertyPanels.initPanels (cpu (R_CPU)) elapsed time: 0.2s
+// Elapsed time: 81 seconds
+closeFrame(PAResourceOtoP.PAViews_NETLIST, "Netlist"); // ax (aI, cp)
+// Elapsed time: 805 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_CPU.v":23'
+// Elapsed time: 134 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_TOP.v":23'
+// Elapsed time: 378 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cp): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, f)
+setFolderChooser("C:/Users/wangwenge/Documents");
+// Elapsed time: 12 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "R_I_CPU"); // Y (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 57 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "484"); // OverlayTextField (I, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tfgg484-2L ; 484 ; 285 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 4 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ; 0 ; 100 ; 100 ; E ; 0.95 ; 0.95 ; 1.05", 32, "xc7a100tfgg484-2L", 0); // x (Q, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tfgg484-2L ; 484 ; 285 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 4 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ; 0 ; 100 ; 100 ; E ; 0.95 ; 0.95 ; 1.05", 32, "xc7a100tfgg484-2L", 0, false, false, false, false, true); // x (Q, f) - Double Click
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bx (f):  Create Project : addNotify
+selectButton("PAResourceItoN.NewProjectWizard_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (C, J)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project R_I_CPU C:/Users/wangwenge/Documents/R_I_CPU -part xc7a100tfgg484-2L 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,513 MB (+52168kb) [00:57:52]
+// WARNING: HEventQueue.dispatchEvent() is taking  3042 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,520 MB. GUI used memory: 93 MB. Current time: 5/29/19, 7:34:07 PM IRKT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1717.492 ; gain = 53.102 
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 94 seconds
+// [GUI Memory]: 144 MB (+4082kb) [00:57:55]
+dismissDialog("Create Project"); // bx (f)
+dismissDialog("New Project"); // f (cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "R_I_TOP"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new 
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "R_I_CPU"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ALU"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "REGS"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "PC"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 44 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v 
+// Tcl Message: close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v 
+// Tcl Message: close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v 
+// Tcl Message: close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v 
+// Tcl Message: close [ open C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v 
+// I (cp): Define Modules: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Modules"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v)]", 1); // B (D, cp)
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_TOP.v":23'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v)]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), alu : ALU (ALU.v)]", 5, false); // B (D, cp)
+// Tcl Message: current_project R_I_J_CPU 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), alu : ALU (ALU.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v":6'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ALU.v]", 2, false); // B (D, cp)
+// Tcl Message: current_project R_I_CPU 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ALU.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v":0'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 151 MB (+25kb) [00:59:20]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, R_I_CPU.v]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, REGS.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, REGS.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v":0'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), regs : REGS (REGFILE.v)]", 4, false); // B (D, cp)
+// Tcl Message: current_project R_I_J_CPU 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), regs : REGS (REGFILE.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), regs : REGS (REGFILE.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/MemoryIP/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/REGFILE.v":23'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project R_I_CPU 
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v":6'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC (PC.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REGS (REGS.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REGS (REGS.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v":1'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC (PC.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC (PC.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC (PC.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Users/wangwenge/AppData/Local/Programs/Microsoft VS Code/Code.exe -g "C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v":23'
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bx (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bx (SwingUtilities.SharedOwnerFrame)
+// Elapsed time: 13 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ip"); // OverlayTextField (ay, cp)
+selectTreeTableHeader(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4", 1); // O (Q, cp)
+// Elapsed time: 18 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "block mem"); // OverlayTextField (ay, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 3, "Block Memory Generator", 0, true); // O (Q, cp) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 3); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 3, "Block Memory Generator", 0, true, false, false, false, false, true); // O (Q, cp) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// l (cp):  Customize IP : addNotify
+// r (cp): Customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1581 ms.
+dismissDialog("Customize IP"); // l (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,568 MB. GUI used memory: 99 MB. Current time: 5/29/19, 7:37:20 PM IRKT
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (C, r)
+setText("Defines the PortA Write Width(DINA)", "32"); // z (bh, r)
+setText("Write Depth", "64"); // z (bh, r)
+selectComboBox("Operating Mode (Operating_Mode_A)", "Read First", 1); // E (C, r)
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // E (C, r)
+selectCheckBox((HResource) null, "Primitives Output Register", false); // g (o, r): FALSE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (C, r)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), pc : Fetch_Instr (Fetch_Instr.v)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), pc : Fetch_Instr (Fetch_Instr.v), Inst_addr : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false); // B (D, cp)
+// Tcl Message: current_project R_I_J_CPU 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), pc : Fetch_Instr (Fetch_Instr.v), Inst_addr : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), pc : Fetch_Instr (Fetch_Instr.v), Inst_addr : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), pc : Fetch_Instr (Fetch_Instr.v), Inst_addr : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectButton(PAResourceQtoS.SrcFilePropPanels_MORE_INFO, "more info"); // h (cQ, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), pc : Fetch_Instr (Fetch_Instr.v), Inst_addr : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 629, 92); // dr (af, cp)
+selectCheckBox((HResource) null, "Load Init File", true); // g (o, r): TRUE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,596 MB. GUI used memory: 101 MB. Current time: 5/29/19, 7:38:15 PM IRKT
+// [Engine Memory]: 1,596 MB (+7682kb) [01:02:18]
+// Elapsed time: 64 seconds
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+setFileChooser("c:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/code.coe");
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 145 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, R_I_CPU.v]", 2, false); // B (D, cp)
+// Tcl Message: current_project R_I_CPU 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project R_I_J_CPU 
+// Elapsed time: 60 seconds
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+setFileChooser("C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/code.coe");
+// Elapsed time: 37 seconds
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+setFileChooser("C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/code.coe");
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (C, r)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, R_TOP (R_TOP.v), cpu : R_CPU (R_CPU.v), pc : Fetch_Instr (Fetch_Instr.v), Inst_addr : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTab((HResource) null, (HResource) null, "Source File Properties", 0); // aI (aF, cp)
+// Elapsed time: 31 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cQ, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, I)

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Desktop/Exp3_ALU/ALU_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_TEST
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/ALU/ALU/ALU.srcs/sim_1/new/constraints.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module constraints

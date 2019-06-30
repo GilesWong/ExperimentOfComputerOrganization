@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1558579138">
+  <File Type="ROUTE-PWR" Name="R_TOP_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="R_TOP.tcl"/>
+  <File Type="BITSTR-BMM" Name="R_TOP_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="R_TOP_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="R_TOP_reports.tcl"/>
+  <File Type="OPT-DCP" Name="R_TOP_opt.dcp"/>
+  <File Type="OPT-DRC" Name="R_TOP_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="R_TOP.hwdef"/>
+  <File Type="PWROPT-DCP" Name="R_TOP_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="R_TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="R_TOP_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="R_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="R_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="R_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="R_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="R_TOP.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="R_TOP_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="R_TOP.bin"/>
+  <File Type="PHYSOPT-DCP" Name="R_TOP_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="R_TOP.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="R_TOP_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="R_TOP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="R_TOP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="R_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="R_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="R_TOP_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="R_TOP.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="R_TOP_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="R_TOP.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="R_TOP_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="R_TOP_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="R_TOP.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="R_TOP_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="R_TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="R_TOP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="R_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="R_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="R_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="R_TOP_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="R_TOP_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="R_TOP_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="R_TOP_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="R_TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="R_TOP_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="R_TOP.bit"/>
+  <File Type="BITSTR-RBT" Name="R_TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="R_TOP.nky"/>
+  <File Type="BG-DRC" Name="R_TOP.drc"/>
+  <File Type="RDI-RDI" Name="R_TOP.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Fetch_Instr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/REGFILE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/R_CPU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/R_TOP.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/code.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="R_TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constr.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constr.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

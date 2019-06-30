@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sim_1/new/simulation.v,1557934690,verilog,,,,simulation,,,,,,,,
+C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1560057984,verilog,,C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/Fetch_Instr_Top.v,,blk_mem_gen_0,,,,,,,,
+C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/Fetch_Instr.v,1557974488,verilog,,C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/Fetch_Instr_Top.v,,Fetch_Instr,,,,,,,,
+C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/Fetch_Instr_Top.v,1560008024,verilog,,C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/segControl.v,,Fetch_Instr_Top,,,,,,,,
+C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sources_1/new/segControl.v,1557373068,verilog,,C:/Users/wangwenge/Documents/Fetch_Instr/Fetch_Instr.srcs/sim_1/new/simulation.v,,segControl,,,,,,,,

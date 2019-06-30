@@ -1,0 +1,348 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun  9 15:23:59 2019
+# Process ID: 2400
+# Current directory: C:/Users/wangwenge/Documents/R_I_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1692 C:\Users\wangwenge\Documents\R_I_CPU\R_I_CPU.xpr
+# Log file: C:/Users/wangwenge/Documents/R_I_CPU/vivado.log
+# Journal file: C:/Users/wangwenge/Documents/R_I_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 707.477 ; gain = 114.426
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim/code.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim/code.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ded7f0d0bf6444abaf36c220bab34833 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'W_Addr' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v:54]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim.uut.cpu.PC.Inst_addr.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim.uut.cpu.DATA_RAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1059.090 ; gain = 23.852
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-2L
+Top: R_I_TOP
+WARNING: [Synth 8-2611] redeclaration of ansi port F is not allowed [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1059.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'R_I_TOP' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'R_I_CPU' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Instr' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Instr' (2#1) [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-350] instance 'PC' of module 'Fetch_Instr' requires 4 connections, but only 3 given [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v:33]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/Decoder.v:50]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/Decoder.v:72]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/Decoder.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (3#1) [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'REGS' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REGS' (4#1) [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/REGS.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'W_Addr' does not match port width (5) of module 'REGS' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v:54]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v:6]
+WARNING: [Synth 8-6090] variable 'F' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v:28]
+WARNING: [Synth 8-6090] variable 'F' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/ALU.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (6#1) [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'R_I_CPU' (7#1) [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_CPU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'R_I_TOP' (8#1) [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/new/R_I_TOP.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1059.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1059.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1059.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'cpu/DATA_RAM'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'cpu/PC/Inst_addr'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/wangwenge/Documents/R_I_CPU/R_I_CPU.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1240.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1265.660 ; gain = 206.570
+29 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1265.660 ; gain = 206.570
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1265.820 ; gain = 0.000
+close_project
+open_project C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim/instr.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/DisplayTube.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayTube
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch_Instr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/REGS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module R_I_J_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module R_I_J_TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fdce2e0bc12d4f3f98e18b6b2af28443 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'W_Addr' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.Fetch_Instr
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.REGS
+Compiling module xil_defaultlib.ALU
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.R_I_J_CPU
+Compiling module xil_defaultlib.DisplayTube
+Compiling module xil_defaultlib.R_I_J_TOP
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim/xsim.dir/sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim/xsim.dir/sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jun  9 16:16:41 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun  9 16:16:41 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1731.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim.uut.cpu.pc.Inst_addr.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim.uut.cpu.DATA_RAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1739.035 ; gain = 8.219
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-2L
+Top: R_I_J_TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1739.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'R_I_J_TOP' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_TOP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'R_I_J_CPU' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Instr' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Instr' (2#1) [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v:57]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v:82]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v:101]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (3#1) [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'REGS' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/REGS.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REGS' (4#1) [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/REGS.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'W_Addr' does not match port width (5) of module 'REGS' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v:67]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v:6]
+WARNING: [Synth 8-6090] variable 'F' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v:28]
+WARNING: [Synth 8-6090] variable 'F' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/ALU.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (6#1) [C:/Users/wangwenge/Documents/R_I_CPU/.Xil/Vivado-2400-654F/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-3848] Net PC_new in module/entity R_I_J_CPU does not have driver. [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'R_I_J_CPU' (7#1) [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DisplayTube' [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/DisplayTube.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DisplayTube' (8#1) [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/DisplayTube.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'R_I_J_TOP' (9#1) [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/new/R_I_TOP.v:3]
+WARNING: [Synth 8-3917] design R_I_J_TOP has port enable driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1739.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1739.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1739.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'cpu/DATA_RAM'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'cpu/pc/Inst_addr'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/wangwenge/Documents/R_I_J_CPU/R_I_J_CPU.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1739.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1739.262 ; gain = 0.000
+33 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1739.262 ; gain = 0.000
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.

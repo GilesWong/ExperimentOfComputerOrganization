@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Segement.srcs/sources_1/new/Segment.v" \
+"../../../../Segement.srcs/sources_1/new/Segment_top.v" \
+"../../../../Segement.srcs/sources_1/new/segControl.v" \
+"../../../../Segement.srcs/sim_1/new/siim_1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
